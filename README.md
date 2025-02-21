@@ -1,6 +1,6 @@
 <h1>Сборник учебных материалов ФИТиМ (ИВТ)<img height="40px" decoding="async" loading="lazy" src="https://cdn-0.emojis.wiki/emoji-pics-lf/telegram/clown-face-telegram.gif" alt="🤡"></h1>
 <h1></h1>
-<ul>Course 1<br>
+<ul>Course 1
     <li>English</li>
     <li>Комп Графика</li>
     <li>Мат анализ</li>
@@ -12,7 +12,7 @@
 
 </ul>
 <h1></h1>
-<ul>Course 2<br>
+<ul>Course 2
     <li>1С</li>
     <li>БЖ</li>
     <li>Математика</li>
