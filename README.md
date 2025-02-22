@@ -13,10 +13,10 @@
 </ul>
 <h1></h1>
 <ul>Course 2
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/English">1С</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/English">БЖ</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/English">Математика</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/English">ЭВМ</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/English">Почта преподавателей</li>
+    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/1C">1С</li>
+    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%96">БЖ</li>
+    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">Математика</li>
+    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%AD%D0%92%D0%9C">ЭВМ</li>
+    <li><a href = "https://github.com/Lesyalys/Study/blob/main/course%202/%D0%9F%D0%BE%D1%87%D1%82%D0%B0%20%D0%BF%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.txt">Почта преподавателей</li>
 
 </ul>
