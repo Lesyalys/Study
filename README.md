@@ -3,7 +3,7 @@
 <ul>Course 1
     <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/English">English</li>
     <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/%D0%9A%D0%BE%D0%BC%D0%BF%20%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0">Комп Графика</li>
-    <li>Мат анализ</li>
+    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/%D0%9C%D0%B0%D1%82%20%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7">Мат анализ</li>
     <li>Планирование карьеры</li>
     <li>Программирование</li>
     <li>Физика</li>
