@@ -1,0 +1,1 @@
+<h1><a href ="https://github.com/Lesyalys/Study/tree/main/course%202/%D0%AD%D0%92%D0%9C/%D0%AD%D0%92%D0%9C_%D0%9F%D0%A3_%D0%9B%D0%A0">Лабараторных</h1>
