@@ -1,4 +1,4 @@
-<h1>Сборник учебных материалов ФИТиМ (ИВТ)<img height="40px" decoding="async" loading="lazy" src="https://cdn-0.emojis.wiki/emoji-pics-lf/telegram/clown-face-telegram.gif" alt="🤡"></h1>
+<h1 align = "center ">Сборник учебных материалов ФИТиМ (ИВТ)<img height="40px" decoding="async" loading="lazy" src="https://cdn-0.emojis.wiki/emoji-pics-lf/telegram/clown-face-telegram.gif" alt="🤡"></h1>
 
 <ul>Course 1
     <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/English">English</li>
