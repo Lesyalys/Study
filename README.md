@@ -14,6 +14,7 @@
 <h1></h1>
 <ul><h2 align = "center">Course 2</h2>
     <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/1C">1С</li>
+    <li a href="https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%94">БД</li>
     <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%96">БЖ</li>
     <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">Математика</li>
     <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%AD%D0%92%D0%9C">ЭВМ</li>
