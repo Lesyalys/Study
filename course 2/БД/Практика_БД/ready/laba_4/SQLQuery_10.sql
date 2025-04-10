@@ -1,0 +1,1 @@
+--10.Вывести количество месяцев от вашего рождения.DECLARE @TODAY DATE= GETDATE()DECLARE @MYDATE DATE = '19.04.2001'SELECT 	DATEDIFF(MONTH,@MYDATE, @TODAY) AS 'количество месяцев от вашего рождения'

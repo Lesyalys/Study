@@ -1,0 +1,1 @@
+SELECT DISTINCT Number FROM myTable2
