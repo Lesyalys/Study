@@ -12,7 +12,7 @@
 
 </details>
 <h1></h1>
-<details><sumarry align = "center">Course 2</sumarry>
+<details><summary align = "center">Course 2</summary>
     <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/1C">1С</li>
     <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%94">БД</li>
     <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%96">БЖ</li>
