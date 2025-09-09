@@ -25,14 +25,14 @@
 
 <hr/>
 <ul><h2 align = "center">Course 3</h2>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/1C">
-    Java
+    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%203/Java">
+    Java 
     <img height="40px" src="https://cdn.iconscout.com/icon/free/png-512/free-java-logo-icon-svg-download-png-3029997.png?f=webp&w=512" alt="😒"/>
     </li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%94">БД</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%96">БЖ</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">Математика</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%AD%D0%92%D0%9C">ЭВМ</li>
+    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%203/%D0%A0%D0%BE%D0%B1%D0%BE%D1%82%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0">
+    Робототехника
+    <img height="40px" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/bender-icon-svg-download-png-618760.png?f=webp&w=512" alt="😒"/></li>
+    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%96">WEB</li>
     <li><a href = "https://github.com/Lesyalys/Study/blob/main/course%202/%D0%9F%D0%BE%D1%87%D1%82%D0%B0%20%D0%BF%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.txt">Почта преподавателей</li>
     
 
