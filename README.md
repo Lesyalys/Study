@@ -30,10 +30,11 @@
     <img height="40px" src="https://cdn.iconscout.com/icon/free/png-512/free-java-logo-icon-svg-download-png-3029997.png?f=webp&w=512" alt="😒"/>
     </li>
     <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%203/%D0%A0%D0%BE%D0%B1%D0%BE%D1%82%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0">
-   Робототехника</li>
-   <img height="40px" src="https://cdn.iconscout.com/icon/free/png-512/free-robot-icon-svg-download-png-9273963.png?f=webp&w=512" alt="😒"/> 
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%96">WEB
-    <img height="40px" src="https://cdn.iconscout.com/icon/free/png-512/free-web-icon-svg-download-png-458408.png?f=webp&w=512" alt="😒"/> </li>
+   Робототехника
+   <img height="4Spx" src="https://cdn.iconscout.com/icon/free/png-512/free-robot-icon-svg-download-png-9273963.png?f=webp&w=512" alt="😒"/> 
+   </li>
+    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%203/Web">WEB
+    <img height="30px" src="https://cdn.iconscout.com/icon/free/png-512/free-web-icon-svg-download-png-458408.png?f=webp&w=512" alt="😒"/> </li>
     <li><a href = "https://github.com/Lesyalys/Study/blob/main/course%202/%D0%9F%D0%BE%D1%87%D1%82%D0%B0%20%D0%BF%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.txt">Почта преподавателей</li>
     
 
