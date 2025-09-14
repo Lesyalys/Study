@@ -1,5 +1,7 @@
 package furniture;
 
+import java.util.List;
+
 /**
  * 🛋️ Класс, представляющий диван как вид мебели 🛋️.
  * Наследуется от базового класса furniture и реализует специфические свойства дивана.
@@ -16,8 +18,19 @@ public class Sofa extends furniture {
      * 
      * @param name наименование дивана (например, "Угловой диван", "Диван-кровать")
      */
-    public Sofa(String name) {
-        super(name); // Вызов конструктора родительского класса
+    public Sofa(String sofaName, String sofaMaterial, String sofaColor) {
+        super(sofaName); // Вызов конструктора родительского класса
+    }
+    
+
+    public int coutSofa(List<furniture> furList) {
+        int count = 0;
+        for (furniture f: furList) {
+            if (f instanceof Sofa) {
+                count ++;
+            }
+        }
+        return count;
     }
     
     /**
@@ -27,8 +40,12 @@ public class Sofa extends furniture {
      * 
      * @return строковое описание дивана в формате: "Диван: [наименование]"
      */
-    @Override
-    public String toString() {
-        return ("Диван: " + name);
+//    @Override
+//    public String toString() {
+//        return ("Sofa: " + nameMaterial);
+//    }
+    
+    public String toString(Sofa s, List<furniture> furList) {
+        return("\n🔢count: "+ s.coutSofa(furList)+"\n☁️materials: ?"+"\nName: "+s.name);
     }
 }

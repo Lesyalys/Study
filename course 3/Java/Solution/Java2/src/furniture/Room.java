@@ -25,10 +25,11 @@ public class Room {
      * @param fur объект мебели для добавления (диван или шкаф)
      * @param count количество экземпляров для добавления
      */
-    public void AddFur(furniture fur, int count) {
+    public List<furniture> AddFur(furniture fur, int count) {
         for (int i = 0; i < count; i++) {
             furList.add(fur);
         }
+        return (furList);
     }
     
     /**
@@ -37,15 +38,15 @@ public class Room {
      * 
      * @return количество диванов в комнате
      */
-    public int coutSofa() {
-        int count = 0;
-        for (furniture f: furList) {
-            if (f instanceof Sofa) {
-                count ++;
-            }
-        }
-        return count;
-    }
+//    public int coutSofa() {
+//        int count = 0;
+//        for (furniture f: furList) {
+//            if (f instanceof Sofa) {
+//                count ++;
+//            }
+//        }
+//        return count;
+//    }
     
     /**
      * Подсчитывает количество шкафов в комнате.
@@ -53,15 +54,15 @@ public class Room {
      * 
      * @return количество шкафов в комнате
      */
-    public int countWardrobe() {
-        int count = 0;
-        for (furniture f : furList) {
-            if (f instanceof Wardrobe) {
-                count++;
-            }
-        }
-        return count;
-    }
+//    public int countWardrobe() {
+//        int count = 0;
+//        for (furniture f : furList) {
+//            if (f instanceof Wardrobe) {
+//                count++;
+//            }
+//        }
+//        return count;
+//    }
     
     /**
      * Отображает все предметы мебели в комнате.

@@ -1,5 +1,7 @@
 package furniture;
 
+import java.util.List;
+
 /**
  * 🚪 Класс, представляющий шкаф как вид мебели 🚪.
  * Наследуется от базового класса furniture и реализует специфические свойства шкафа.
@@ -16,8 +18,18 @@ public class Wardrobe extends furniture {
      * 
      * @param name наименование шкафа (например, "Гардеробный шкаф", "Книжный шкаф", "Встроенный шкаф")
      */
-    public Wardrobe(String name) {
-        super(name); // Вызов конструктора родительского класса
+    public Wardrobe(String wardrobeName, String wardrobeMaterial, int doorsCount) {
+        super(wardrobeName); // Вызов конструктора родительского класса
+    }
+    
+    public int countWardrobe(List<furniture> furList) {
+        int count = 0;
+        for (furniture f : furList) {
+            if (f instanceof Wardrobe) {
+                count++;
+            }
+        }
+        return count;
     }
     
     /**
@@ -27,8 +39,7 @@ public class Wardrobe extends furniture {
      * 
      * @return строковое описание шкафа в формате: "Шкаф: [наименование]"
      */
-    @Override
-    public String toString() {
-        return("Шкаф: " + name);
+    public String toString(Wardrobe w, List<furniture> furList) {
+        return("\n🔢count: "+ w.countWardrobe(furList)+"\n🪵materials: wood");
     }
 }

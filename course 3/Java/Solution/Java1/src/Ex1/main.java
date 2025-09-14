@@ -9,7 +9,7 @@ public class main {
 		int size = 0,sortArr[];
 		
 		ArrayOne A1 = new ArrayOne();
-		ArrayTwo A2 = new ArrayTwo();
+
 		
 		System.out.println("Введите размер массива: ");
 		Scanner in = new Scanner(System.in);
@@ -18,18 +18,13 @@ public class main {
 			size = in.nextInt();
 			if (size > 0) {
 				int[] arrayOne = new int[size];
-				int[][] arraTwo = new int[size][size];
 				
 				Random random = new Random();
 				
 				for (int i = 0; i < size; i++) {
 					arrayOne[i] = random.nextInt(3);
 				}
-				for (int i = 0; i < size; i++) {
-					for (int j = 0; j < size; j ++) {						
-						arraTwo[i][j] = random.nextInt(3);
-					}
-				}
+
 				System.out.println("Исходный массив: "+Arrays.toString(arrayOne));
 				
 				sortArr = A1.sort(arrayOne);
@@ -48,18 +43,7 @@ public class main {
 				System.out.println("Исходный ( Отсортированный ) массив: "+Arrays.toString(arrayOne));
 				A1.cutArray(sortArr);
 
-				System.out.println("\n┌──────────────────────────────────────────────┐");
-				System.out.println("│           ДВУМЕРНЫЕ МАССИВЫ               │");
-				System.out.println("├──────────────────────────────────────────────┤");
-				System.out.println("│ № 9  - Диагональные элементы                │");
-				System.out.println("└──────────────────────────────────────────────┘");
-				A2.dioganalArray(arraTwo);
-
-				System.out.println("\n┌──────────────────────────────────────────────┐");
-				System.out.println("│ № 19 - Столбцы с одинаковой суммой          │");
-				System.out.println("└──────────────────────────────────────────────┘");
-				A2.SumElement(arraTwo);
-				System.out.println("────────────────────────────────────────────────");
+				
 				
 				in.close();
 			} else {

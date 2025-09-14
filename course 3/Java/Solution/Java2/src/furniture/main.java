@@ -1,5 +1,7 @@
 package furniture;
+import java.util.List;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /**
  * ❗Главный класс приложения для демонстрации работы с мебелью в комнате❗.
@@ -17,7 +19,7 @@ public class main {
     /**
      * Основной метод приложения.
      * Демонстрирует работу с системой учета мебели в комнате:
-     * - Ввод количества мебели
+     * - Ввод характеристик мебели
      * - Добавление мебели в комнату
      * - Подсчет количества мебели по типам
      * - Обработка исключений ввода
@@ -25,38 +27,90 @@ public class main {
      * @param args аргументы командной строки (не используются)
      */
     public static void main(String[] args) {
-        int count = 0;
         Room room = new Room();
-        
         Scanner scan = new Scanner(System.in);
+        List<furniture> allSofas = new ArrayList<>();
+        List<furniture> allWardrobes = new ArrayList<>();
         
         try {
-            // Запрос количества диванов для добавления
-            System.out.println("Enter do you want add in room Sofa count : ");    
-            count = scan.nextInt();
-            Sofa sofa = new Sofa("s1");
-            room.AddFur(sofa, count);
+            // Ввод данных для диванов
+            System.out.println("Введите количество диванов: ");
+            int sofaCount = scan.nextInt();
+            scan.nextLine(); // очистка буфера
             
-            // Запрос количества шкафов для добавления
-            System.out.println("Enter do you want add in room Wardrobe count: ");
-            count = scan.nextInt();
-            Wardrobe wardrobe = new Wardrobe("w2");
-            room.AddFur(wardrobe, count);
+            for (int i = 0; i < sofaCount; i++) {
+                System.out.println("Диван #" + (i + 1));
+                System.out.println("Введите название дивана: ");
+                String sofaName = scan.nextLine();
+                
+                System.out.println("Введите материал дивана: ");
+                String sofaMaterial = scan.nextLine();
+                
+                System.out.println("Введите цвет дивана: ");
+                String sofaColor = scan.nextLine();
+                
+                Sofa sofa = new Sofa(sofaName, sofaMaterial, sofaColor);
+                List<furniture> addedSofas = room.AddFur(sofa, 1);
+                allSofas.addAll(addedSofas);
+            }
+            
+            // Ввод данных для шкафов
+            System.out.println("Введите количество шкафов: ");
+            int wardrobeCount = scan.nextInt();
+            scan.nextLine(); // очистка буфера
+            
+            for (int i = 0; i < wardrobeCount; i++) {
+                System.out.println("Шкаф #" + (i + 1));
+                System.out.println("Введите название шкафа: ");
+                String wardrobeName = scan.nextLine();
+                
+                System.out.println("Введите материал шкафа: ");
+                String wardrobeMaterial = scan.nextLine();
+                
+                System.out.println("Введите количество дверей: ");
+                int doorsCount = scan.nextInt();
+                scan.nextLine(); // очистка буфера
+                
+                Wardrobe wardrobe = new Wardrobe(wardrobeName, wardrobeMaterial, doorsCount);
+                List<furniture> addedWardrobes = room.AddFur(wardrobe, 1);
+                allWardrobes.addAll(addedWardrobes);
+            }
+            
+            // Вывод результатов
+            System.out.println("\n=== ВСЯ МЕБЕЛЬ В КОМНАТЕ ===");
+            room.showAllFurniture();
+            
+            System.out.println("\n=== СТАТИСТИКА ===");
+            System.out.println("Всего предметов мебели: " + room.sumAllFurniture());
+            
+            // Вывод всех диванов
+            System.out.println("\n=== ВСЕ ДИВАНЫ ===");
+            for (furniture sofa : allSofas) {
+                System.out.println(sofa.toString());
+            }
+            
+            // Вывод всех шкафов
+            System.out.println("\n=== ВСЕ ШКАФЫ ===");
+            for (furniture wardrobe : allWardrobes) {
+                System.out.println(wardrobe.toString());
+            }
+            
+            // Подсчет по типам (если методы существуют)
+//            if (!allSofas.isEmpty()) {
+//                Sofa firstSofa = (Sofa) allSofas.get(0);
+//                System.out.println("Количество диванов: " + firstSofa.coutSofa(allSofas));
+//            }
+            
+            if (!allWardrobes.isEmpty()) {
+                Wardrobe firstWardrobe = (Wardrobe) allWardrobes.get(0);
+                System.out.println("Количество шкафов: " + firstWardrobe.countWardrobe(allWardrobes));
+            }
             
         } catch(Exception ex) {
-            // Обработка ошибок ввода
-            System.out.println("Error!" + ex);
+            System.out.println("Ошибка ввода данных: " + ex.getMessage());
+            ex.printStackTrace();
         } finally {
-            // Закрытие Scanner для предотвращения утечек ресурсов
             scan.close();
         }
-        
-        // Вывод результатов подсчета мебели
-        System.out.println("Wardrobe: " + room.countWardrobe());
-        System.out.println("Sofa: " + room.coutSofa());
-        System.out.println("all: "+ room.sumAllFurniture());
-        
-        // Закомментированный вывод всей мебели (можно раскомментировать для отладки)
-        // room.showAllFurniture();
     }
 }
