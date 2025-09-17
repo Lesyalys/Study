@@ -11,6 +11,8 @@ import java.util.List;
  * @see furniture базовый класс мебели
  */
 public class Wardrobe extends furniture {
+	private String wardrobeMaterial;
+	private Integer doorsCount; 
     
     /**
      * Конструктор класса Wardrobe.
@@ -20,6 +22,8 @@ public class Wardrobe extends furniture {
      */
     public Wardrobe(String wardrobeName, String wardrobeMaterial, int doorsCount) {
         super(wardrobeName); // Вызов конструктора родительского класса
+        this.wardrobeMaterial = wardrobeMaterial;
+        this.doorsCount = doorsCount;
     }
     
     public int countWardrobe(List<furniture> furList) {
@@ -39,7 +43,10 @@ public class Wardrobe extends furniture {
      * 
      * @return строковое описание шкафа в формате: "Шкаф: [наименование]"
      */
-    public String toString(Wardrobe w, List<furniture> furList) {
-        return("\n🔢count: "+ w.countWardrobe(furList)+"\n🪵materials: wood");
+    @Override
+    public String toString() {
+        return("🛋️ Шкаф: " + getName() + 
+                "\n📦 Материал: " + wardrobeMaterial + 
+                "\n🎨 Кол-во дверей: " + doorsCount);
     }
 }

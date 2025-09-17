@@ -50,8 +50,10 @@ public class main {
                 String sofaColor = scan.nextLine();
                 
                 Sofa sofa = new Sofa(sofaName, sofaMaterial, sofaColor);
-                List<furniture> addedSofas = room.AddFur(sofa, 1);
-                allSofas.addAll(addedSofas);
+//                List<furniture> addedSofas = room.AddFur(sofa, 1);
+//                allSofas.addAll(addedSofas);
+                room.AddFur(sofa, 1);
+                allSofas.add(sofa);
             }
             
             // Ввод данных для шкафов
@@ -72,8 +74,10 @@ public class main {
                 scan.nextLine(); // очистка буфера
                 
                 Wardrobe wardrobe = new Wardrobe(wardrobeName, wardrobeMaterial, doorsCount);
-                List<furniture> addedWardrobes = room.AddFur(wardrobe, 1);
-                allWardrobes.addAll(addedWardrobes);
+//                List<furniture> addedWardrobes = room.AddFur(wardrobe, 1);
+//                allWardrobes.addAll(addedWardrobes);
+                room.AddFur(wardrobe, 1);
+                allWardrobes.add(wardrobe);
             }
             
             // Вывод результатов
@@ -95,16 +99,6 @@ public class main {
                 System.out.println(wardrobe.toString());
             }
             
-            // Подсчет по типам (если методы существуют)
-//            if (!allSofas.isEmpty()) {
-//                Sofa firstSofa = (Sofa) allSofas.get(0);
-//                System.out.println("Количество диванов: " + firstSofa.coutSofa(allSofas));
-//            }
-            
-            if (!allWardrobes.isEmpty()) {
-                Wardrobe firstWardrobe = (Wardrobe) allWardrobes.get(0);
-                System.out.println("Количество шкафов: " + firstWardrobe.countWardrobe(allWardrobes));
-            }
             
         } catch(Exception ex) {
             System.out.println("Ошибка ввода данных: " + ex.getMessage());
