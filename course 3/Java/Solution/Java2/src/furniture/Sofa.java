@@ -1,40 +1,61 @@
 package furniture;
-
 import java.util.List;
 
 /**
- * 🛋️ Класс, представляющий диван как вид мебели 🛋️.
- * Наследуется от базового класса Furniture и реализует специфические свойства дивана.
+ * Класс дивана, наследуется от базового класса мебели.
+ * Представляет диван с дополнительными характеристиками: материал и цвет.
  * 
- * @author 💫 Lesya Valentyukevich group 3312 🌠
+ * @author Lesya Valentyukevich group 3312
  * @version 1.0
- * @see Furniture базовый класс мебели
  */
 public class Sofa extends furniture {
+    /** Наименование материала дивана */
     private String material;
+    
+    /** Цвет дивана */
     private String color;
 
     /**
      * Конструктор класса Sofa.
-     * Создает объект дивана с указанными параметрами.
-     * 
-     * @param sofaName наименование дивана
-     * @param sofaMaterial материал дивана
-     * @param sofaColor цвет дивана
+     *
+     * @param name название дивана
+     * @param material материал дивана
+     * @param color цвет дивана
      */
-    public Sofa(String sofaName, String sofaMaterial, String sofaColor) {
-        super(sofaName); // Вызов конструктора родительского класса
-        this.material = sofaMaterial;
-        this.color = sofaColor;
+    public Sofa(String name, String material, String color) {
+        super(name);
+        this.material = material;
+        this.color = color;
     }
 
     /**
-     * Подсчитывает количество диванов в списке мебели
+     * Получает материал дивана.
+     *
+     * @return материал дивана
+     */
+    public String getMaterial() {
+        return material;
+    }
+
+    /**
+     * Получает цвет дивана.
+     *
+     * @return цвет дивана
+     */
+    public String getColor() {
+        return color;
+    }
+
+    /**
+     * Подсчитывает количество диванов в списке мебели.
+     *
+     * @param furList список мебели для анализа
+     * @return количество диванов
      */
     public int countSofa(List<furniture> furList) {
         int count = 0;
-        for (furniture f : furList) {
-            if (f instanceof Sofa) {
+        for (furniture fur : furList) {
+            if (fur instanceof Sofa) {
                 count++;
             }
         }
@@ -42,39 +63,28 @@ public class Sofa extends furniture {
     }
 
     /**
-     * Возвращает материал дивана
-     */
-    public String getMaterial() {
-        return material;
-    }
-
-    /**
-     * Возвращает цвет дивана
-     */
-    public String getColor() {
-        return color;
-    }
-
-    /**
-     * Возвращает строковое представление объекта дивана.
+     * Возвращает строковое представление дивана.
+     *
+     * @return строка с информацией о диване
      */
     @Override
     public String toString() {
-        return "🛋️ Диван: " + getName() + 
-               "\n📦 Материал: " + material + 
-               "\n🎨 Цвет: " + color;
+        return "Диван: Name: " + getName() + ", Material: " + material + ", Color: " + color;
     }
 
     /**
-     * Статический метод для получения информации о диванах в списке
+     * Получает информацию о всех диванах в списке.
+     *
+     * @param furList список мебели для анализа
+     * @return строка с информацией о диванах
      */
     public static String getSofaInfo(List<furniture> furList) {
-        int count = 0;
-        for (furniture f : furList) {
-            if (f instanceof Sofa) {
-                count++;
+        StringBuilder info = new StringBuilder();
+        for (furniture fur : furList) {
+            if (fur instanceof Sofa) {
+                info.append(fur.toString()).append("\n");
             }
         }
-        return "🔢 Количество диванов: " + count;
+        return info.toString();
     }
 }

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "gacp": "^3.0.3"
+  },
+  "scripts": {
+    "commit": "gacp --emoji emoji"
+  }
+}
