@@ -10,7 +10,7 @@ public class form1 {
 	public static void main(String s[]) {
 		JFrame frame = new JFrame("FrameDemo");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(500,500);
+		frame.setSize(500,400);
 		header(frame);
 		bodyBtn(frame);
 		bodyCenter(frame);
@@ -39,27 +39,32 @@ public class form1 {
 		panel.setLayout(new GridLayout(9,1));
 		ArrayList <JCheckBox> listText = new ArrayList <JCheckBox>();
 		for (int i = 0; i < 9; i++) {			
-			listText.add(new JCheckBox("Btn "+i));
+			listText.add(new JCheckBox("Btn "+(i+1)));
 			panel.add(listText.get(i));
 		}
 		frame.add(panel,BorderLayout.WEST);
 	}
 	public static void bodyCenter(JFrame frame) {
-		JPanel panel = new JPanel(new GridLayout(2,3));
-		JSpinner spinner = new JSpinner ();
-		JSpinner spinne2 = new JSpinner ();
-		JRadioButton rbBtn = new JRadioButton ();
-		JRadioButton rbBtn2 = new JRadioButton ();
-		panel.add(spinner);
-		panel.add(spinne2);
-		panel.add(rbBtn);
-		
-		panel.add(new JLabel());
-		panel.add(rbBtn2,BorderLayout.CENTER);
-		panel.add(new JLabel());
-		frame.add(panel,BorderLayout.CENTER);
+	    JPanel panel = new JPanel(new BorderLayout());
+	    
+	    JSpinner spinner = new JSpinner();
+	    JSpinner spinner2 = new JSpinner();
+	    JRadioButton rbBtn = new JRadioButton("btnRadio1");
+	    JRadioButton rbBtn2 = new JRadioButton("btnRadio2");
+	    
+	    JPanel topPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
+	    topPanel.add(spinner);
+	    topPanel.add(spinner2);
+	    topPanel.add(rbBtn);
+	    
+	    JPanel bottomPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+	    bottomPanel.add(rbBtn2);
+	    
+	    panel.add(topPanel, BorderLayout.NORTH);
+	    panel.add(bottomPanel, BorderLayout.CENTER);
+	    
+	    frame.add(panel, BorderLayout.CENTER);
 	}
-	
 	 public static void bodyRight(JFrame frame) {
 	        JPanel panel = new JPanel(new BorderLayout());
 	        JTextArea textArea = new JTextArea(10, 15); 

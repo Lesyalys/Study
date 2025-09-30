@@ -1,7 +1,5 @@
 package java4;
 import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.util.ArrayList;
 
@@ -54,9 +52,9 @@ public class form3 {
 	
 	 public static void bodyRight(JFrame frame) {
 		 JPanel panel = new JPanel();
-			panel.setLayout(new GridLayout(9,1));
+			panel.setLayout(new GridLayout(8,1));
 			ArrayList <JTextField> listText = new ArrayList <JTextField>();
-			for (int i = 0; i < 9; i++) {			
+			for (int i = 0; i < 8; i++) {			
 				listText.add(new JTextField("Text field "+ (i+1)));
 				panel.add(listText.get(i));
 			}

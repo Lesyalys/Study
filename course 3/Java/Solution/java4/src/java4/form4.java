@@ -13,79 +13,72 @@ public class form4 {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(500,500);
 		header(frame);
-		bodyBtn(frame);
+//		underHeader(frame);
+//		bodyBtn(frame);
 		bodyCenter(frame);
 		bodyRight(frame);
-		footer(frame);
+//		footer(frame);
 		
 		frame.setVisible(true);
 				
  }
 	
 	public static void header(JFrame frame) {
-	    JPanel panel = new JPanel(new BorderLayout());
+	    JPanel panel = new JPanel(new GridLayout(2,1));
+	    JPanel topPanel = new JPanel(new BorderLayout());
 	    JPanel panelr = new JPanel(new FlowLayout(FlowLayout.RIGHT));
 	    JPanel panell = new JPanel(new FlowLayout(FlowLayout.LEFT));
 	    JSlider slider = new JSlider();
 	    JLabel label1 = new JLabel("label1");
 	    JLabel label2 = new JLabel("label2");
+	    JTextField textField = new JTextField();
 	    
-	    panel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+//	    panel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
 	    
 	    panelr.add(label1);
 	    panell.add(label2);
 	    
-	    panel.add(panelr, BorderLayout.EAST);  
-	    panel.add(slider, BorderLayout.CENTER); 
-	    panel.add(panell, BorderLayout.WEST);   
+	    topPanel.add(panelr, BorderLayout.EAST);  
+	    topPanel.add(panell, BorderLayout.WEST);   
+	    
+	    JPanel centerPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+	    centerPanel.add(slider);
+	    topPanel.add(centerPanel, BorderLayout.CENTER);
+	    
+	    panel.add(topPanel, BorderLayout.CENTER);
+	    panel.add(textField, BorderLayout.CENTER); 
 	    
 	    frame.add(panel, BorderLayout.NORTH);
 	}
+
 	
-	public static void bodyBtn(JFrame frame) {
-		JPanel panel = new JPanel(new BorderLayout());
-		panel.setBorder(BorderFactory.createEmptyBorder(5, 5, 0, 0));
-	    JSlider slider = new JSlider(JSlider.VERTICAL);
-	    panel.add(slider);
-//	    frame.add(panel);
+	public static void bodyCenter(JFrame frame) {
+		JPanel panel = new JPanel(new GridLayout(4, 3, 10, 10));
+//		JButton btn = new JButton();
+		ArrayList<JButton> btnList = new ArrayList<JButton>();
+		for (int i = 1; i <= 9; i++) {
+			btnList.add(new JButton(""+i));
+			panel.add(btnList.get(i-1));
+		}
+		 panel.add(new JPanel());
+		btnList.add(new JButton("0"));
+	    panel.add(btnList.get(9));
+	    panel.add(new JPanel());
 	    
+		
 		frame.add(panel,BorderLayout.WEST);
 	}
 	
-	public static void bodyCenter(JFrame frame) {
-	    JPanel panel = new JPanel(new BorderLayout());
-//	    JFileChooser path = new JFileChooser();
-	    JTree path = new JTree();
-	    panel.add(path);
-	    frame.add(panel, BorderLayout.CENTER);
-	}
-	
 	 public static void bodyRight(JFrame frame) {
-		 JPanel panel = new JPanel();
+		 JPanel panel = new JPanel(new GridLayout(4, 3, 10, 10));
 			panel.setLayout(new GridLayout(9,1));
-			ArrayList <JTextField> listText = new ArrayList <JTextField>();
-			for (int i = 0; i < 9; i++) {			
-				listText.add(new JTextField("Text field "+ (i+1)));
-				panel.add(listText.get(i));
-			}
+			JButton btn1 = new JButton("+");
+			JButton btn2 = new JButton("-");
+			JButton btn3 = new JButton("=");
+			panel.add(btn1);
+			panel.add(btn2);
+			panel.add(btn3);
 	        frame.add(panel, BorderLayout.EAST);
 	    }
 	
-	public static void footer(JFrame frame) {
-		JPanel panel = new JPanel();
-//		panel.setLayout(new GridLayout(1, 4, 10, 0));
-		panel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5)); 
-		JCheckBox  btnCheck = new JCheckBox ("Chenge 1");
-		JRadioButton btnRadio = new JRadioButton("Chenge 2");
-		JButton btn = new JButton("btn");
-		JEditorPane htmlPane = new JEditorPane("text/html", "<input type='text'></input>");
-		
-//		JPanel rigtPanel = new JPanel(new  FlowLayout(FlowLayout.RIGHT));
-
-		panel.add(btnCheck);
-		panel.add(btnRadio);
-		panel.add(btn);
-		panel.add(htmlPane);
-		frame.add(panel,BorderLayout.SOUTH);
-	}
 }
