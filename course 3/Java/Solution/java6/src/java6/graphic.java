@@ -3,41 +3,46 @@ import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-
+import java.util.Map;
 
 import javax.swing.*;
-import javax.swing.JPanel;
 
 
 public class graphic {
-	
-	public class JMyPanel extends JPanel{
-		public static enum Figure{LINE,OVAL,RECT,ROUNDRECT,CLEAR}
-		private Figure vibor=Figure.CLEAR;
-		public JMyPanel() { } 
-		public void ris(String s) {//метод, вызов которого приводит к перерисовке панели
-			//параметр s принимает значение во время вызова данного метода (см. MyGraph.java)
-			vibor=Figure.valueOf(s); //устанавливаем, что нужно нарисовать
-			repaint(); //перерисовываем нашу панель, т.е. вызываем метод paintComponent
-			 }
-	}
-	
+
 	public static void main(String s[]) {
-		JFrame frame = new JFrame("💖 Lesya Valentyukevich 3312💖");
+		JFrame frame = new JFrame("💖 Lesya Valentyukevich 3312 💖");
 		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
-		frame.setSize(500,500);
-		frame.setVisible(true);
+		frame.setSize(700,700);
 		
 		menu(frame);
+		frame.setVisible(true);
 	}
 	
 	public static void menu(JFrame frame) {
-		JMenuBar menus = new JMenuBar();
-		ArrayList <JMenu> listMneu = new ArrayList <JMenu>();
-		for (int i =0; i < 3; i++) {
-			listMneu.add(new JMenu("Menu"+(i+1)));
-			menus.add(listMneu.get(i));
+		JMenuBar menuBar = new JMenuBar();
+		JMyPanel panel = new JMyPanel();
+		frame.add(panel,BorderLayout.CENTER);
+		String[][] mname = {
+			    {"LINE", "| LINE |"},
+			    {"OVAL", "⊂ OVAL ⊃"},
+			    {"RECT", "⌜ RECT ⌝"},
+			    {"ROUNDRECT", "◜ROUNDRECT◝"},
+			    {"MYLASTNAME", "⁎ MYLASTNAME ⁎"},
+			    {"CLEAR", "↻ CLEAR ↺"}
+			};
+		for (String[] i : mname) {
+			JMenuItem item = new JMenuItem(i[1]);
+			item.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent  e) {
+					panel.ris(i[0]);
+					}
+				});
+			menuBar.add(item);
 		}
-		frame.add(menus);
+
+		frame.setJMenuBar(menuBar);
+		
 	}
 }

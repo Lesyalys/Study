@@ -14,7 +14,7 @@ import javax.swing.*;
 public class form2 {
 	private static JTextField textField = new JTextField();
 	public static void main(String s[]) {
-		JFrame frame = new JFrame("💖 Lesya Valentyukevich 3312💖");
+		JFrame frame = new JFrame("💖 Lesya Valentyukevich 3312 💖");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(500,500);
 		header(frame);
