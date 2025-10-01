@@ -10,13 +10,9 @@ import javax.swing.JPanel;
 
 
 	public class JMyPanel extends JPanel{
-//		GradientPaint g0 = new GradientPaint(50,50,Color.CYAN,getWidth(), getHeight(), Color.MAGENTA);
-//		GradientPaint g1 = new GradientPaint(50,50,Color.PINK,getWidth(), getHeight(), Color.CYAN);
-//		GradientPaint g3 = new GradientPaint(50,50,Color.GREEN,getWidth(), getHeight(), Color.YELLOW);
-		GradientPaint g5 = new GradientPaint(50,50,Color.CYAN,getWidth(), getHeight(), Color.MAGENTA);
 		
 			public static enum Figure{LINE,OVAL,RECT,ROUNDRECT,MYLASTNAME,CLEAR}
-			private Figure vibor=Figure.CLEAR;
+			private Figure vibor=Figure.MYLASTNAME;
 			
 			public JMyPanel() { 
 				setBackground(Color.BLACK);
