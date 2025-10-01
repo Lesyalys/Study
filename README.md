@@ -1,41 +1,64 @@
-<h1 align = "center ">Сборник учебных материалов ФИТиМ (ИВТ)<img height="40px" decoding="async" loading="lazy" src="https://cdn-0.emojis.wiki/emoji-pics-lf/telegram/clown-face-telegram.gif" alt="🤡"></h1>
 
-<ul><h2 align = "center">Course 1</h2>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/English">English</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/%D0%9A%D0%BE%D0%BC%D0%BF%20%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0">Комп Графика</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/%D0%9C%D0%B0%D1%82%20%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7">Мат анализ</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/%D0%9F%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%B0%D1%80%D1%8C%D0%B5%D1%80%D1%8B%20(%D0%9F%D0%9A)%20%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8%20(%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B%20%D0%9D%D0%95%20%D0%9D%D0%A3%D0%96%D0%9D%D0%AB)">Планирование карьеры</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20(%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8%20%2B%20%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0)">Программирование</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/%D0%A4%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0">Физика</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%201/%D0%A4%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D0%B8%D1%8F">Философия</li>
-    <li><a href = "https://github.com/Lesyalys/Study/blob/main/course%201/%D0%9F%D0%BE%D1%87%D1%82%D0%B0%20%D0%BF%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.txt">Почта преподавателей</li>
+# 📚 Сборник учебных материалов ФИТиМ (ИВТ)
 
-</ul>
-<hr/>
-<ul><h2 align = "center">Course 2</h2>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/1C">1С</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%94">БД</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%96">БЖ</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">Математика</li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%202/%D0%AD%D0%92%D0%9C">ЭВМ</li>
-    <li><a href = "https://github.com/Lesyalys/Study/blob/main/course%202/%D0%9F%D0%BE%D1%87%D1%82%D0%B0%20%D0%BF%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.txt">Почта преподавателей</li>
-    
+<div align="center">
 
-</ul>
+**Учебные материалы для студентов ФИТиМ по направлению ИВТ**
 
-<hr/>
-<ul><h2 align = "center">Course 3</h2>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%203/Java">
-    Java 
-    <img height="40px" src="https://cdn.iconscout.com/icon/free/png-512/free-java-logo-icon-svg-download-png-3029997.png?f=webp&w=512" alt="😒"/>
-    </li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%203/%D0%A0%D0%BE%D0%B1%D0%BE%D1%82%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0">
-   Робототехника
-   <img height="4Spx" src="https://cdn.iconscout.com/icon/free/png-512/free-robot-icon-svg-download-png-9273963.png?f=webp&w=512" alt="😒"/> 
-   </li>
-    <li><a href = "https://github.com/Lesyalys/Study/tree/main/course%203/Web">WEB
-    <img height="30px" src="https://cdn.iconscout.com/icon/free/png-512/free-web-icon-svg-download-png-458408.png?f=webp&w=512" alt="😒"/> </li>
-    <li><a href = "https://github.com/Lesyalys/Study/blob/main/course%203/%D0%9F%D0%BE%D1%87%D1%82%D0%B0%20%D0%BF%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.txt">Почта преподавателей</li>
-    
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/Lesyalys/Study)
+[![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)](https://github.com/Lesyalys/Study)
 
-</ul>
+</div>
+
+---
+
+## 🎯 Курсы
+
+### 🎓 **1 Курс**
+<div align="center">
+
+| 📚 Предмет | 🔗 Ссылка |
+|------------|------------|
+| **🇬🇧 English** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%201/English) |
+| **🎨 Компьютерная графика** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%201/%D0%9A%D0%BE%D0%BC%D0%BF%20%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0) |
+| **📊 Математический анализ** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%201/%D0%9C%D0%B0%D1%82%20%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7) |
+| **💼 Планирование карьеры** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%201/%D0%9F%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%B0%D1%80%D1%8C%D0%B5%D1%80%D1%8B%20(%D0%9F%D0%9A)%20%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8%20(%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B%20%D0%9D%D0%95%20%D0%9D%D0%A3%D0%96%D0%9D%D0%AB)) |
+| **💻 Программирование** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%201/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20(%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8%20%2B%20%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0)) |
+| **🔬 Физика** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%201/%D0%A4%D0%B8%D0%B7%D0%B8%D0%BA%D0%B0) |
+| **🧠 Философия** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%201/%D0%A4%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D0%B8%D1%8F) |
+| **📧 Почта преподавателей** | [Перейти →](https://github.com/Lesyalys/Study/blob/main/course%201/%D0%9F%D0%BE%D1%87%D1%82%D0%B0%20%D0%BF%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.txt) |
+
+</div>
+
+---
+
+### 🎓 **2 Курс**
+<div align="center">
+
+| 📚 Предмет | 🔗 Ссылка |
+|------------|------------|
+| **🏢 1С** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%202/1C) |
+| **🗄️ Базы данных** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%94) |
+| **🛡️ Безопасность жизнедеятельности** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%202/%D0%91%D0%96) |
+| **📐 Математика** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%202/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0) |
+| **💾 ЭВМ** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%202/%D0%AD%D0%92%D0%9C) |
+| **📧 Почта преподавателей** | [Перейти →](https://github.com/Lesyalys/Study/blob/main/course%202/%D0%9F%D0%BE%D1%87%D1%82%D0%B0%20%D0%BF%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.txt) |
+
+</div>
+
+---
+
+### 🎓 **3 Курс**
+<div align="center">
+
+| 📚 Предмет | 🔗 Ссылка |
+|------------|------------|
+| **<img src="https://cdn.iconscout.com/icon/free/png-512/free-java-logo-icon-svg-download-png-3029997.png?f=webp&w=512" width="20" height="20"> Java** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%203/Java) |
+| **<img src="https://cdn.iconscout.com/icon/free/png-512/free-robot-icon-svg-download-png-9273963.png?f=webp&w=512" width="20" height="20"> Робототехника** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%203/%D0%A0%D0%BE%D0%B1%D0%BE%D1%82%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0) |
+| **<img src="https://cdn.iconscout.com/icon/free/png-512/free-web-icon-svg-download-png-458408.png?f=webp&w=512" width="20" height="20"> Web-технологии** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%203/Web) |
+| **📧 Почта преподавателей** | [Перейти →](https://github.com/Lesyalys/Study/blob/main/course%203/%D0%9F%D0%BE%D1%87%D1%82%D0%B0%20%D0%BF%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.txt) |
+
+</div>
+
+---
+
