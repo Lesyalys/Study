@@ -19,6 +19,7 @@ public class graphic {
 	
 	public static void menu(JFrame frame) {
 		JMenuBar menuBar = new JMenuBar();
+		JMenu menus = new JMenu("Menu");
 		JMyPanel panel = new JMyPanel();
 		frame.add(panel,BorderLayout.CENTER);
 		String[][] mname = {
@@ -29,6 +30,7 @@ public class graphic {
 			    {"MYLASTNAME", "⁎ MYLASTNAME ⁎"},
 			    {"CLEAR", "↻ CLEAR ↺"}
 			};
+//		menus.add(menuBar);
 		for (String[] i : mname) {
 			JMenuItem item = new JMenuItem(i[1]);
 			item.addActionListener(new ActionListener() {
@@ -37,7 +39,9 @@ public class graphic {
 					panel.ris(i[0]);
 					}
 				});
-			menuBar.add(item);
+			menus.add(item);
+//			menuBar.add(item);
+			menuBar.add(menus);
 		}
 
 		frame.setJMenuBar(menuBar);

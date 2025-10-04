@@ -74,8 +74,6 @@ public class form2 {
 	    JPanel panel = new JPanel(new GridLayout(2,1));
 	    JPanel panel2 = new JPanel(new BorderLayout());
 	    Box panelr = new Box(BoxLayout.X_AXIS);
-//	    Box all = new Box (BoxLayout.Y_AXIS);
-//	    JPanel panell = new JPanel(new  FlowLayout(FlowLayout.LEFT));
 	    textField = new JTextField();
 	    
 	    textField.setPreferredSize(new Dimension(400, 150));
