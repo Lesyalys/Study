@@ -1,0 +1,9 @@
+2025-10-10 17:41:37.389770+05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+SELECT * FROM student [42104-240]
+2025-10-10 17:42:54.504819+05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+SELECT * FROM STUDENT [42104-240]
+2025-10-10 17:46:26.778851+05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+SELECT * FROM STUDENT [42104-240]
