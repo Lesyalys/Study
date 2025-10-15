@@ -129,13 +129,20 @@ public class MainGUI {
 	    JPanel exportPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
 	    
 	    JButton exportButton = new JButton("💾 Export to Word");
+	    JButton exportButtonEx = new JButton("💾 Export to Exel");
 	    exportButton.addActionListener(new ActionListener() {
 	        @Override
 	        public void actionPerformed(ActionEvent e) {
 	            exportCurrentTable();
 	        }
 	    });
-	    
+	    exportButtonEx.addActionListener(new ActionListener() {
+	        @Override
+	        public void actionPerformed(ActionEvent e) {
+	        	exportCurrentTableExel();
+	        }
+	    });
+	    exportPanel.add(exportButtonEx);
 	    exportPanel.add(exportButton);
 	    return exportPanel;
 	}
@@ -161,6 +168,33 @@ public class MainGUI {
 	        
 	        // export
 	        WordExporter.exportTableToWord(currentTable, tableName);
+	    } else {
+	        JOptionPane.showMessageDialog(mainFrame,
+	            "Нет активной таблицы для экспорта",
+	            "Ошибка экспорта",
+	            JOptionPane.WARNING_MESSAGE);
+	    }
+	}
+	
+	private static void exportCurrentTableExel() {
+	    JViewport viewport = dynamicScrollPane.getViewport();
+	    if (viewport != null && viewport.getView() instanceof JTable) {
+	        JTable currentTable = (JTable) viewport.getView();
+	        
+	        String tableName = "Table";
+	        Component header = dynamicScrollPane.getColumnHeader().getView();
+	        if (header instanceof JLabel) {
+	            String headerText = ((JLabel) header).getText();
+	            // get title table
+	            if (headerText.contains("-")) {
+	                tableName = headerText.split("-")[1].trim();
+	            } else {
+	                tableName = headerText.replace("Table -", "").trim();
+	            }
+	        }
+	        
+	        // export
+	        WordExporter.exportTableToExcel(currentTable, tableName);
 	    } else {
 	        JOptionPane.showMessageDialog(mainFrame,
 	            "Нет активной таблицы для экспорта",

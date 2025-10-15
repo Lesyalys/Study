@@ -1,7 +1,8 @@
 package java8;
 
-
 import org.apache.poi.xwpf.usermodel.*;
+import org.apache.poi.xssf.usermodel.*;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.util.Units;
 import javax.swing.*;
 import javax.swing.table.TableModel;
@@ -40,18 +41,110 @@ public class WordExporter {
         return false;
     }
     
+    public static boolean exportTableToExcel(JTable table, String tableName) {
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("Сохранить таблицу как Excel документ");
+        
+        // Name file
+        String defaultFileName = tableName + "_" + 
+            new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".xlsx";
+        fileChooser.setSelectedFile(new File(defaultFileName));
+        
+        int userSelection = fileChooser.showSaveDialog(null);
+        
+        if (userSelection == JFileChooser.APPROVE_OPTION) {
+            File fileToSave = fileChooser.getSelectedFile();
+            // add xlsx
+            if (!fileToSave.getName().toLowerCase().endsWith(".xlsx")) {
+                fileToSave = new File(fileToSave.getAbsolutePath() + ".xlsx");
+            }
+            
+            return createExcelDocument(table, tableName, fileToSave);
+        }
+        return false;
+    }
+    
     private static boolean createWordDocument(JTable table, String tableName, File file) {
         try (XWPFDocument document = new XWPFDocument();
              FileOutputStream out = new FileOutputStream(file)) {
             
             createTitle(document, "Table: " + tableName);
-            
             createExportInfo(document);
-            
-            // create table  Word
             createWordTable(document, table);
             
             document.write(out);
+            
+            JOptionPane.showMessageDialog(null, 
+                "Таблица успешно экспортирована в:\n" + file.getAbsolutePath(),
+                "Экспорт завершен", 
+                JOptionPane.INFORMATION_MESSAGE);
+            return true;
+            
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null,
+                "Ошибка при экспорте: " + e.getMessage(),
+                "Ошибка экспорта",
+                JOptionPane.ERROR_MESSAGE);
+            e.printStackTrace();
+            return false;
+        }
+    }
+    
+    private static boolean createExcelDocument(JTable table, String tableName, File file) {
+        try (XSSFWorkbook workbook = new XSSFWorkbook();
+             FileOutputStream out = new FileOutputStream(file)) {
+            
+            Sheet sheet = workbook.createSheet(tableName);
+            
+            // Стиль для заголовков
+            CellStyle headerStyle = workbook.createCellStyle();
+            headerStyle.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());
+            headerStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+            headerStyle.setBorderBottom(BorderStyle.THIN);
+            headerStyle.setBorderTop(BorderStyle.THIN);
+            headerStyle.setBorderLeft(BorderStyle.THIN);
+            headerStyle.setBorderRight(BorderStyle.THIN);
+            
+            
+            // Стиль для данных
+            CellStyle dataStyle = workbook.createCellStyle();
+            dataStyle.setBorderBottom(BorderStyle.THIN);
+            dataStyle.setBorderTop(BorderStyle.THIN);
+            dataStyle.setBorderLeft(BorderStyle.THIN);
+            dataStyle.setBorderRight(BorderStyle.THIN);
+            
+            TableModel model = table.getModel();
+            int rowCount = model.getRowCount();
+            int colCount = model.getColumnCount();
+            
+            // Заголовки
+            Row headerRow = sheet.createRow(0);
+            for (int col = 0; col < colCount; col++) {
+                Cell cell = headerRow.createCell(col);
+                cell.setCellValue(model.getColumnName(col));
+                cell.setCellStyle(headerStyle);
+                sheet.autoSizeColumn(col);
+            }
+            
+            // Данные
+            for (int row = 0; row < rowCount; row++) {
+                Row dataRow = sheet.createRow(row + 1);
+                for (int col = 0; col < colCount; col++) {
+                    Cell cell = dataRow.createCell(col);
+                    Object value = model.getValueAt(row, col);
+                    if (value != null) {
+                        cell.setCellValue(value.toString());
+                    }
+                    cell.setCellStyle(dataStyle);
+                }
+            }
+            
+            // Авто-размер колонок
+            for (int col = 0; col < colCount; col++) {
+                sheet.autoSizeColumn(col);
+            }
+            
+            workbook.write(out);
             
             JOptionPane.showMessageDialog(null, 
                 "Таблица успешно экспортирована в:\n" + file.getAbsolutePath(),
