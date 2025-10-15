@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="min-h-screen">
+
+    <!-- Pattern 1 -->
+    <section>
+        <table class="flex-1 w-full min-h-[50vh]">
+            <tbody>
+                <tr>
+                    <td colspan="5" class="bg-pink-200 rounded-lg">1</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="bg-red-200 rounded-lg">2</td>
+                    <td class="bg-yellow-200 rounded-lg">3</td>
+                    <td rowspan="3" class="bg-blue-200 rounded-lg">4</td>
+                    <td class="bg-green-200 rounded-lg">5</td>
+                    <td class="bg-gray-300 rounded-lg">6</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="bg-green-200 rounded-lg">3</td>
+                    <td rowspan="3" class="bg-red-200 rounded-lg">5</td>
+                    <td class="bg-pink-200 rounded-lg">6</td>
+                </tr>
+                <tr>
+                    <td class="bg-yellow-200 rounded-lg">6</td>
+                </tr>
+                <tr>
+                    <td class="bg-pink-200 rounded-lg">2</td>
+                    <td class="bg-pink-200 rounded-lg">4</td>
+                    <td class="bg-green-200 rounded-lg">6</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Pattern 2 -->
+    <section>
+        <table class="flex-1 w-full min-h-[50vh]" style="border: 3px solid black;">
+            <tbody>
+                <tr style="background-color: rgb(132, 8, 240);">
+                    <td colspan="8">6</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: rgb(90, 179, 212);" rowspan="6">1</td>
+                    <td style="background-color: rgb(8, 62, 240);" colspan="6">1</td>
+                    <td style="background-color: rgb(90, 179, 212);;" rowspan="6">1</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: rgb(159, 90, 212);" rowspan="4">2</td>
+                    <td colspan="4" style="background-color: rgb(224, 8, 240);" colspan="6">2</td>
+                    <td style="background-color: rgb(159, 90, 212);" rowspan="4">2</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: rgb(212, 90, 92);" rowspan="2">3</td>
+                    <td style="background-color:rgb(199, 216, 119)">3</td>
+                    <td style="background-color:rgb(0, 126, 128)">3</td>
+                    <td style="background-color: rgb(212, 90, 92);" rowspan="2">3</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color:rgb(0, 126, 128)">4</td>
+                    <td style="background-color:rgb(199, 216, 119)">4</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: rgb(224, 8, 240);" colspan="4">5</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: rgb(8, 62, 240);" colspan="6">6</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: rgb(132, 8, 240);" colspan="8">6</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
