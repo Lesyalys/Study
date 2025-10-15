@@ -37,6 +37,8 @@ finally {
 	}
 }
 
+
+//old select
 public JTable getTable(String tableName) {
     DefaultTableModel model = new DefaultTableModel();
     ResultSet localRS = null;
@@ -78,6 +80,7 @@ public JTable getTable(String tableName) {
     }
     return new JTable(model);}
     
+//new select
     public JTable getSmartTable(String tableName) {
         DefaultTableModel model = new DefaultTableModel();
         ResultSet localRS = null;
@@ -88,12 +91,12 @@ public JTable getTable(String tableName) {
             ResultSetMetaData rsmd = localRS.getMetaData();
             int columnsNumber = rsmd.getColumnCount();
             
-            // Добавляем названия колонок
+            // названия колонок
             for (int i = 1; i <= columnsNumber; i++) {
                 model.addColumn(rsmd.getColumnName(i));
             }
             
-            // Добавляем данные
+            // Дданные
             while (localRS.next()) {
                 Vector<Object> row = new Vector<>();
                 for (int i = 1; i <= columnsNumber; i++) {
@@ -127,25 +130,21 @@ public JTable getTable(String tableName) {
         switch (tableName.toUpperCase()) {
             case "ROOM":
                 return "SELECT " +
-                       "r.id as ID, " +
                        "r.room_name as \"Название комнаты\", " +
                        "r.room_type as \"Тип комнаты\", " +
                        "r.area_sqm as \"Площадь (м²)\", " +
                        "r.floor as \"Этаж\", " +
                        "r.description as \"Описание\", " +
                        "COUNT(rf.furniture_id) as \"Кол-во мебели\", " +
-                       "STRING_AGG(f.name, ', ') as \"Мебель в комнате\" " + // GROUP_CONCAT заменен на STRING_AGG
+                       "STRING_AGG(f.name, ', ') as \"Мебель в комнате\" " +
                        "FROM room r " +
                        "LEFT JOIN room_furniture rf ON r.id = rf.room_id " +
                        "LEFT JOIN furniture f ON rf.furniture_id = f.id " +
                        "GROUP BY r.id, r.room_name, r.room_type, r.area_sqm, r.floor, r.description";
                 
-            case "LECTURER":
-                return "SELECT * FROM LECTURER";
                 
             case "MANUFACTURER":
                 return "SELECT " +
-                       "m.id as ID, " +
                        "m.company_name as \"Компания\", " +
                        "m.country as \"Страна\", " +
                        "m.warranty_years as \"Гарантия (лет)\", " +
@@ -159,9 +158,7 @@ public JTable getTable(String tableName) {
                 
             case "ROOM_FURNITURE":
                 return "SELECT " +
-                       "rf.room_id as \"ID комнаты\", " +
                        "r.room_name as \"Комната\", " +
-                       "rf.furniture_id as \"ID мебели\", " +
                        "f.name as \"Название мебели\", " +
                        "f.type as \"Тип\", " +
                        "rf.quantity as \"Количество\", " +
@@ -175,7 +172,6 @@ public JTable getTable(String tableName) {
                 
             case "SOFA":
                 return "SELECT " +
-                       "s.id as ID, " +
                        "f.name as \"Название дивана\", " +
                        "f.material as \"Материал\", " +
                        "f.color as \"Цвет\", " +
@@ -196,7 +192,6 @@ public JTable getTable(String tableName) {
                 
             case "WARDROBE":
                 return "SELECT " +
-                       "w.id as ID, " +
                        "f.name as \"Название шкафа\", " +
                        "f.material as \"Материал\", " +
                        "f.color as \"Цвет\", " +
@@ -217,8 +212,7 @@ public JTable getTable(String tableName) {
                 
             case "FURNITURE":
                 return "SELECT " +
-                       "f.id as ID, " +
-                       "f.name as \"Название\", " +
+                       "f.name as Название, " +
                        "CASE f.type " +
                        "  WHEN 'SOFA' THEN 'Диван' " +
                        "  WHEN 'WARDROBE' THEN 'Шкаф' " +
