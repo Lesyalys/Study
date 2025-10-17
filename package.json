@@ -3,6 +3,7 @@
     "gacp": "^3.0.3"
   },
   "scripts": {
-    "commit": "gacp --emoji emoji"
+    "commit": "gacp --emoji emoji",
+    "git": "git add . && git commit -m \"new\" && git push"
   }
 }
