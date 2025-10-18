@@ -52,6 +52,7 @@
 
 | 📚 Предмет | 🔗 Ссылка |
 |------------|------------|
+| **📝 Ознакомительная практика** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%203/Java) |
 | **☕ Java** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%203/Java) |
 | **🤖 Робототехника** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%203/%D0%A0%D0%BE%D0%B1%D0%BE%D1%82%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0) |
 | **🌐 Основы Web программирования** | [Перейти →](https://github.com/Lesyalys/Study/tree/main/course%203/Web) |
