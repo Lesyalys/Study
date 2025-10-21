@@ -34,26 +34,48 @@ public:
 
 class Raspisanie
 {
-    Zanyatie *arr[5];
+    Zanyatie *arr[10];
 
 public:
+    Raspisanie()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            arr[i] = nullptr;
+        }
+    }
     void set(int i, Zanyatie *z) { arr[i] = z; }
     void show()
     {
-        for (int i = 0; i < 5; i++)
-            if (arr[i])
+        for (int i = 0; i < 10; i++)
+            if (arr[i] != nullptr)
                 arr[i]->print();
     }
 };
 
 int main()
 {
-    Lecture *l1 = new Lecture("Math", "Mon", "09:00", "Calculus");
-    LabWork *lw1 = new LabWork("Physics Lab", "Wed", "14:00", "Scope");
+    int count;
+    cout << "Enter count Lecture and LabWork lines: (max 10) ";
+    cin >> count;
+    if (count > 10)
+    {
+        cout << "\nNo more 10 plese!";
+        return 0;
+    }
     Raspisanie r;
-    r.set(0, l1);
-    r.set(1, lw1);
-    r.show();
-    delete l1;
-    delete lw1;
+
+    for (int i = 0; i < count; i++)
+    {
+        Lecture *lecture = new Lecture("Math " + to_string(i + 1), "Mon", "09:00", "Calculus " + to_string(i + 1));
+        r.set(i + 1, lecture);
+        lecture->print();
+
+        LabWork *lab = new LabWork("Physics Lab " + to_string(i + 1), "Wed", "14:00", "Scope " + to_string(i + 1));
+        r.set(i + 1, lab);
+        lab->print();
+    }
+    // r.show();
+    // delete l1;
+    // delete lw1;
 }

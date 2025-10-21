@@ -20,7 +20,7 @@ class Raspisanie
 {
     string num;
     string addr;
-    Zanyatie arr[10];
+    Zanyatie arr[3];
     int count;
 
 public:
@@ -35,7 +35,7 @@ public:
     ~Raspisanie() { cout << "Raspisanie: dtor\n"; }
     void addByParams(const string &n, const string &d, const string &t)
     {
-        if (count < 10)
+        if (count < 3)
             arr[count++] = Zanyatie(n, d, t);
     }
     void addCopies(const Zanyatie &z, int k)

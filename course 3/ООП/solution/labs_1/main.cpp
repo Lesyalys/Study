@@ -2,7 +2,6 @@
 #include <string>
 using namespace std;
 
-// Дополнительный класс - Занятие
 class Zanyatie
 {
     string name;
@@ -23,7 +22,6 @@ public:
     }
 };
 
-// Основной класс - Расписание
 class Raspisanie
 {
     string schoolNumber;
@@ -53,11 +51,24 @@ public:
 
 int main()
 {
+    int count = 0;
+    cout << "Enter count fields: ";
+    cin >> count;
+    if (count > 10)
+    {
+        cout << "\nNo more 10 plese!";
+        return 0;
+    }
     Raspisanie r;
-    r.setSchoolNumber("School #10");
+    r.setSchoolNumber("\nSchool #10");
     r.setAddress("Lenina 1");
-    r.addZanyatie(Zanyatie("Math", "Mon", "09:00"));
-    r.addZanyatie(Zanyatie("Physics Lab", "Wed", "14:00"));
+
+    for (int i = 0; i < count; i++)
+    {
+        r.addZanyatie(Zanyatie("Math", "Mon", "09:00"));
+
+        r.addZanyatie(Zanyatie("Physics Lab", "Wed", "14:00"));
+    }
     r.print();
     return 0;
 }

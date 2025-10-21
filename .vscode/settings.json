@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Tomorrow Night Blue",
+    "workbench.colorTheme": "Monokai Dimmed",
     "files.associations": {
         "array": "cpp",
         "atomic": "cpp",
@@ -52,6 +52,9 @@
         "text_encoding": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "cstdarg": "cpp"
+        "cstdarg": "cpp",
+        "list": "cpp",
+        "set": "cpp",
+        "fstream": "cpp"
     }
 }
