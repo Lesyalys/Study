@@ -25,7 +25,15 @@ public:
 
 int main()
 {
-    Zanyatie z1("Math", "Mon", "09:00");
+    string n, w, t;
+    cout << "Enter study: ";
+    getline(cin, n);
+    cout << "Enter Week day: ";
+    getline(cin, w);
+    cout << "Enter time: ";
+    getline(cin, t);
+
+    Zanyatie z1(n, w, t);
     ofstream out("z.txt");
     out << z1 << "\n";
     out.close();

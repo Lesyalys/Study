@@ -91,7 +91,6 @@ public JTable getTable(String tableName) {
             ResultSetMetaData rsmd = localRS.getMetaData();
             int columnsNumber = rsmd.getColumnCount();
             
-            // названия колонок
             for (int i = 1; i <= columnsNumber; i++) {
                 model.addColumn(rsmd.getColumnName(i));
             }
@@ -121,6 +120,7 @@ public JTable getTable(String tableName) {
         }
         
         JTable table = new JTable(model);
+        table.setName(tableName);
         table.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
         table.setFillsViewportHeight(true);
         return table;

@@ -96,22 +96,6 @@ public class WordExporter {
             
             Sheet sheet = workbook.createSheet(tableName);
             
-            // Стиль для заголовков
-            CellStyle headerStyle = workbook.createCellStyle();
-            headerStyle.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());
-            headerStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
-            headerStyle.setBorderBottom(BorderStyle.THIN);
-            headerStyle.setBorderTop(BorderStyle.THIN);
-            headerStyle.setBorderLeft(BorderStyle.THIN);
-            headerStyle.setBorderRight(BorderStyle.THIN);
-            
-            
-            // Стиль для данных
-            CellStyle dataStyle = workbook.createCellStyle();
-            dataStyle.setBorderBottom(BorderStyle.THIN);
-            dataStyle.setBorderTop(BorderStyle.THIN);
-            dataStyle.setBorderLeft(BorderStyle.THIN);
-            dataStyle.setBorderRight(BorderStyle.THIN);
             
             TableModel model = table.getModel();
             int rowCount = model.getRowCount();
@@ -122,7 +106,6 @@ public class WordExporter {
             for (int col = 0; col < colCount; col++) {
                 Cell cell = headerRow.createCell(col);
                 cell.setCellValue(model.getColumnName(col));
-                cell.setCellStyle(headerStyle);
                 sheet.autoSizeColumn(col);
             }
             
@@ -135,7 +118,6 @@ public class WordExporter {
                     if (value != null) {
                         cell.setCellValue(value.toString());
                     }
-                    cell.setCellStyle(dataStyle);
                 }
             }
             

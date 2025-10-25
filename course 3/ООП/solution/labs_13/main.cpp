@@ -9,12 +9,12 @@ struct Zanyatie
     string name, day, time;
     Zanyatie(string n, string d, string t) : name(n), day(d), time(t) {}
 };
-
 struct IPrintStrategy
 {
     virtual ~IPrintStrategy() {}
     virtual void print(const Zanyatie &z) const = 0;
 };
+
 struct SimplePrint : IPrintStrategy
 {
     void print(const Zanyatie &z) const override { cout << z.name << "\n"; }

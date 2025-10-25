@@ -74,7 +74,7 @@ public class MainGUI {
 	    	System.out.println(btnConfig.getName());
 	    	switch (btnConfig.getName()) {
 	    	case("🗄️ WARDROBE"):
-	    		System.out.println("im werdore");
+//	    		System.out.println("im werdore");
 	    		JButton btn = new JButton(btnConfig.getName());
 	        	btn.addActionListener(e -> {
 	        		openWardrobeReport(btnConfig.getDB());
@@ -95,6 +95,7 @@ public class MainGUI {
 	    return mainMenu;
 	}
 	private static void updateDynamicTable(JTable table, String tableName) {
+		 table.setName(tableName);
         dynamicScrollPane.setViewportView(table);
 //        dynamicScrollPane.setColumnHeaderView(new JLabel("Dynamic Table - " + tableName));
         table.setFillsViewportHeight(true);
@@ -129,7 +130,7 @@ public class MainGUI {
 	    JPanel exportPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
 	    
 	    JButton exportButton = new JButton("💾 Export to Word");
-	    JButton exportButtonEx = new JButton("💾 Export to Exel");
+	    JButton exportButtonEx = new JButton("💾 Export to Excel");
 	    exportButton.addActionListener(new ActionListener() {
 	        @Override
 	        public void actionPerformed(ActionEvent e) {
@@ -153,18 +154,7 @@ public class MainGUI {
 	    JViewport viewport = dynamicScrollPane.getViewport();
 	    if (viewport != null && viewport.getView() instanceof JTable) {
 	        JTable currentTable = (JTable) viewport.getView();
-	        
-	        String tableName = "Table";
-	        Component header = dynamicScrollPane.getColumnHeader().getView();
-	        if (header instanceof JLabel) {
-	            String headerText = ((JLabel) header).getText();
-	            // get title table
-	            if (headerText.contains("-")) {
-	                tableName = headerText.split("-")[1].trim();
-	            } else {
-	                tableName = headerText.replace("Table -", "").trim();
-	            }
-	        }
+	        String tableName = currentTable.getName();
 	        
 	        // export
 	        WordExporter.exportTableToWord(currentTable, tableName);
@@ -180,19 +170,8 @@ public class MainGUI {
 	    JViewport viewport = dynamicScrollPane.getViewport();
 	    if (viewport != null && viewport.getView() instanceof JTable) {
 	        JTable currentTable = (JTable) viewport.getView();
-	        
-	        String tableName = "Table";
-	        Component header = dynamicScrollPane.getColumnHeader().getView();
-	        if (header instanceof JLabel) {
-	            String headerText = ((JLabel) header).getText();
-	            // get title table
-	            if (headerText.contains("-")) {
-	                tableName = headerText.split("-")[1].trim();
-	            } else {
-	                tableName = headerText.replace("Table -", "").trim();
-	            }
-	        }
-	        
+	        String tableName = currentTable.getName();
+	       
 	        // export
 	        WordExporter.exportTableToExcel(currentTable, tableName);
 	    } else {
