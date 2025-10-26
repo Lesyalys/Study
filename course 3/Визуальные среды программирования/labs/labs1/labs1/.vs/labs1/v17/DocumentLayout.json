@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{AC8EFE5E-B35A-40DC-BFA4-595BCB40D80F}|labs1\\labs1.csproj|solutionrelative:labs1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC8EFE5E-B35A-40DC-BFA4-595BCB40D80F}|labs1\\labs1.csproj|D:\\gitStudy\\course 3\\\u0412\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u044B\u0435 \u0441\u0440\u0435\u0434\u044B \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\labs\\labs1\\labs1\\labs1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AC8EFE5E-B35A-40DC-BFA4-595BCB40D80F}|labs1\\labs1.csproj|d:\\gitstudy\\course 3\\\u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u044B\u0435 \u0441\u0440\u0435\u0434\u044B \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\labs\\labs1\\labs1\\labs1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AC8EFE5E-B35A-40DC-BFA4-595BCB40D80F}|labs1\\labs1.csproj|solutionrelative:labs1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -17,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC8EFE5E-B35A-40DC-BFA4-595BCB40D80F}|labs1\\labs1.csproj|d:\\gitstudy\\course 3\\\u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u044B\u0435 \u0441\u0440\u0435\u0434\u044B \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\labs\\labs1\\labs1\\labs1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC8EFE5E-B35A-40DC-BFA4-595BCB40D80F}|labs1\\labs1.csproj|solutionrelative:labs1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC8EFE5E-B35A-40DC-BFA4-595BCB40D80F}|labs1\\labs1.csproj|d:\\gitstudy\\course 3\\\u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u044B\u0435 \u0441\u0440\u0435\u0434\u044B \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\labs\\labs1\\labs1\\labs1\\labs1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AC8EFE5E-B35A-40DC-BFA4-595BCB40D80F}|labs1\\labs1.csproj|solutionrelative:labs1\\labs1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,9 +40,24 @@
               "RelativeDocumentMoniker": "labs1\\Form1.cs",
               "ToolTip": "D:\\gitStudy\\course 3\\\u0412\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u044B\u0435 \u0441\u0440\u0435\u0434\u044B \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\labs\\labs1\\labs1\\labs1\\Form1.cs",
               "RelativeToolTip": "labs1\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T05:44:16.765Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "labs1.csproj",
+              "DocumentMoniker": "D:\\gitStudy\\course 3\\\u0412\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u044B\u0435 \u0441\u0440\u0435\u0434\u044B \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\labs\\labs1\\labs1\\labs1\\labs1.csproj",
+              "RelativeDocumentMoniker": "labs1\\labs1.csproj",
+              "ToolTip": "D:\\gitStudy\\course 3\\\u0412\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u044B\u0435 \u0441\u0440\u0435\u0434\u044B \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\labs\\labs1\\labs1\\labs1\\labs1.csproj",
+              "RelativeToolTip": "labs1\\labs1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-26T16:53:34.954Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -62,7 +81,7 @@
               "RelativeDocumentMoniker": "labs1\\Form1.Designer.cs",
               "ToolTip": "D:\\gitStudy\\course 3\\\u0412\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u044B\u0435 \u0441\u0440\u0435\u0434\u044B \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\\labs\\labs1\\labs1\\labs1\\Form1.Designer.cs",
               "RelativeToolTip": "labs1\\Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAASwFQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T16:51:23.011Z",
               "EditorCaption": ""

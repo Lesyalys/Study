@@ -16,6 +16,7 @@ public class mian {
 		fr.setVisible(true);
 		fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		fr.pack();
+		
 		Timer tm= new Timer(500, new ActionListener(){
 		int i=0;
 		@Override
