@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "gacp": "gacp --emoji emoji",
+    "cm": "gacp --emoji emoji",
     "git": "git add . && git commit -m \"new\" && git push"
   },
   "devDependencies": {
