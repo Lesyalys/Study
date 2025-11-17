@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) throws Exception {
         System.out.println("=== Starting Client-Server Application ===");
         
-        // Инициализация сетевых настроек
         PortSetting networkSettings = new PortSetting();
         
         System.out.println("\n--- Server Side ---");
@@ -29,7 +28,6 @@ public class Main {
         client.displayClientInfo();
         client.startClient();
         
-        // завершения работы
         serverThread.join();
         System.out.println("\n=== Application Finished ===");
     }
