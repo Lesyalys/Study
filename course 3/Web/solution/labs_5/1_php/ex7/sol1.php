@@ -14,4 +14,5 @@ function countCharactersInFile($filename)
     }
     return strlen($content);
 }
+echo countCharactersInFile(isset($argv[1]) ? $argv[1] : "");
 ?>

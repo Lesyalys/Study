@@ -9,4 +9,5 @@ function getSentences($text)
 
     return $sentences;
 }
+print_r(getSentences(isset($argv[1]) ? $argv[1] : "Привет!"));
 ?>

@@ -18,8 +18,9 @@ function getDayOfWeekFromDate($date)
         return "Неверный формат даты";
     }
 
-    $dayNumber = date('w', $timestamp); // 0 - воскресенье, 1 - понедельник, etc.
+    $dayNumber = date('w', $timestamp);
 
     return $days[$dayNumber];
 }
+echo getDayOfWeekFromDate(isset($argv[1]) ? $argv[1] : '');
 ?>

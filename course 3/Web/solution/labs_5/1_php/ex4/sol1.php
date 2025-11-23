@@ -13,7 +13,7 @@ function getCurrentDayOfWeek()
     ];
 
     $dayNumber = date('w');
-
     return $days[$dayNumber];
 }
+echo getCurrentDayOfWeek();
 ?>

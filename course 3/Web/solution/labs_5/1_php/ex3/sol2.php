@@ -5,7 +5,6 @@
 <?php
 $array = [1, '', 2, 3, '', 5];
 
-// array_filter() без callback удаляет все "ложные" значения
 $result = array_filter($array);
 
 print_r($result);

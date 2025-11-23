@@ -60,4 +60,5 @@ function pluralize($word)
 
     return $word . 's';
 }
+echo pluralize(isset($argv[1]) ? $argv[1] : '');
 ?>

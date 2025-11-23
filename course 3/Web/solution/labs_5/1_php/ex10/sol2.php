@@ -12,4 +12,5 @@ function getWordsFromText($text)
 
     return array_values($words);
 }
+print_r(getWordsFromText(isset($argv[1]) ? $argv[1] : ''));
 ?>
